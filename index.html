@@ -229,7 +229,13 @@
             <table width="100%" border="0" align="center">					
                 <tr>
                     <td>
-                        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=CK6-9MXCGsb7jLVXsNWyVkhV3nwwjeDqpMxj_HvBYBo"></script>
+                        <!-- 方案1：使用div包装并设置样式 -->
+                        <div style="width: 300px; height: 300px;">  <!-- 可以调整这里的数值 -->
+                            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=CK6-9MXCGsb7jLVXsNWyVkhV3nwwjeDqpMxj_HvBYBo"></script>
+                        </div>
+                        
+                        <!-- 或者方案2：直接在URL中添加尺寸参数 -->
+                        <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=CK6-9MXCGsb7jLVXsNWyVkhV3nwwjeDqpMxj_HvBYBo&s=300"></script> -->
                     </td>
                 </tr>
             </table>
